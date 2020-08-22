@@ -70,7 +70,6 @@ export default {
       preguntas.forEach(p => {
         p.respuestas.sort(() => 0.5 - Math.random());
       });
-      console.log(preguntas)
       return preguntas;
     }
   },
@@ -80,7 +79,7 @@ export default {
     
     cambio(respuesta, id_pregunta){
       this.elegido[id_pregunta] = respuesta;
-      console.log(this.elegido);
+      
     },
 
     enviarTrivia(){
